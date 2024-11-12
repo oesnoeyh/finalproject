@@ -22,12 +22,15 @@
         <h1>Download File</h1>
         <p>Complete the purchase and verify your phone number to download the file.</p>
         <div class="actions">
-            <button id="purchase-btn">Purchase</button>
+            <button id="purchase-btn" class="red-btn">Purchase</button>
         </div>
-        <div id="auth-section" class="hidden">
-            <p>Enter the verification code sent to your phone:</p>
-            <input type="text" id="verification-code" placeholder="Enter code">
-            <button id="download-btn" class="hidden">Download File</button>
+        <div id="purchase-options" class="hidden">
+            <p>Select a purchase option:</p>
+            <button id="monthly-btn" class="red-btn">Monthly Purchase (₩30,000/month)</button>
+            <button id="yearly-btn" class="red-btn">Annual Purchase (₩25,000/month)</button>
+        </div>
+        <div id="bank-details" class="hidden">
+            <p>Account Number: <strong>123-456-789</strong></p>
         </div>
     </main>
 </body>
