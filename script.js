@@ -28,7 +28,8 @@ document.getElementById('verify-btn').addEventListener('click', () => {
 
         // 다운로드 실행
         setTimeout(() => {
-            window.location.href = 'files/your-program.exe'; // 파일 경로
+            // 다운로드 URL로 이동
+            window.location.href = 'files/your-program.exe'; // 파일 경로 수정
         }, 2000);
     } else {
         messageElement.textContent =
