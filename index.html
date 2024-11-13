@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATCH THE THIEF</title>
+    <title>요금제 선택</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">CATCH THE THIEF</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#Notice">Notice</a></li>
-                <li><a href="#Pricing">Pricing</a></li>
-                <li><a href="#Developer">Developer</a></li>
-            </ul>
-        </nav>
+        <div class="logo">CTACH THE THIEF !</div>
     </header>
-    <main class="hero-section">
-        <h1>Download File</h1>
-        <p>Complete the purchase and verify your phone number to download the file.</p>
-        <div class="actions">
-            <button id="purchase-btn" class="red-btn">Purchase</button>
-        </div>
-        <div id="purchase-options" class="hidden">
-            <p>Select a purchase option:</p>
-            <button id="monthly-btn" class="red-btn">Monthly Purchase (₩30,000/month)</button>
-            <button id="yearly-btn" class="red-btn">Annual Purchase (₩25,000/month)</button>
-        </div>
-        <div id="bank-details" class="hidden">
-            <p>Account Number: <strong>123-456-789</strong></p>
-            <p>Enter the verification code sent to your phone:</p>
-            <input type="text" id="verification-code" placeholder="Enter code">
-            <button id="verify-btn" class="red-btn">Verify and Download</button>
-            <p id="message" class="hidden"></p>
+    <main>
+        <h1>요금제를 선택하세요</h1>
+        <div class="pricing-container">
+            <!-- Free Plan -->
+            <div class="plan">
+                <h2>무료</h2>
+                <p class="price">₩0 / 월</p>
+                <p class="description">시작하려는 개인 사용자에게 적합합니다.</p>
+                <ul>
+                    <li>기본 파일 다운로드</li>
+                    <li>제한적인 고객 지원</li>
+                    <li>기본 기능만 제공</li>
+                </ul>
+                <button class="btn">무료 시작</button>
+            </div>
+            <!-- Plus Plan -->
+            <div class="plan highlight">
+                <h2>플러스</h2>
+                <p class="price">₩15,000 / 월</p>
+                <p class="description">더 나은 서비스를 원하는 사용자에게 적합합니다.</p>
+                <ul>
+                    <li>무제한 파일 다운로드</li>
+                    <li>우선 지원</li>
+                    <li>추가 기능 제공</li>
+                </ul>
+                <button class="btn">플러스 시작</button>
+            </div>
+            <!-- Premium Plan -->
+            <div class="plan">
+                <h2>프리미엄</h2>
+                <p class="price">₩20,000 / 월</p>
+                <p class="description">모든 기능을 원하는 사용자에게 적합합니다.</p>
+                <ul>
+                    <li>무제한 다운로드 및 추가 기능</li>
+                    <li>최우선 지원</li>
+                    <li>고급 기능 제공</li>
+                </ul>
+                <button class="btn">프리미엄 시작</button>
+            </div>
         </div>
     </main>
     <footer>
-        <p>Copyright © 2024. park jinwoo, lee hyein, lee hyeonseo. All rights reserved.</p>
+        <p>Copyright © 2024. 박진우, 이혜인, 이현서. All rights reserved.</p>
     </footer>
 </body>
 </html>
