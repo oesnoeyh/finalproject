@@ -64,10 +64,10 @@ main h1 {
     border-radius: 8px;
     padding: 20px;
     width: 300px;
-    min-height: 280px; /* 동일한 높이 설정 */
+    min-height: 300px; /* 고정 높이 */
     display: flex;
-    flex-direction: column; /* 세로 정렬 */
-    justify-content: space-between; /* 상하 균등 분배 */
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     text-align: left;
 }
@@ -86,7 +86,7 @@ main h1 {
 .plan ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* 간격 문제 제거 */
+    margin: 0;
 }
 
 .plan ul li {
@@ -101,7 +101,6 @@ main h1 {
     margin-top: 15px;
     padding: 10px 15px;
     font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif;
     font-weight: 600;
     color: #fff;
     background-color: #e50914;
@@ -110,9 +109,38 @@ main h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     text-transform: uppercase;
-    align-self: center; /* 버튼 중앙 정렬 */
 }
 
 .btn:hover {
     background-color: #b00710;
+}
+
+/* 숨김 요소 */
+.hidden {
+    display: none;
+}
+
+/* 은행 정보 */
+#bank-details {
+    margin-top: 30px;
+}
+
+/* 메시지 스타일 */
+#message {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* 푸터 스타일 */
+footer {
+    position: relative;
+    margin-top: 20px;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #aaa;
 }
