@@ -3,10 +3,10 @@
 
 /* 기본 스타일 */
 body {
-    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 우선 적용 */
+    font-family: 'Pretendard', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #141414; /* 넷플릭스 스타일 검정 */
+    background-color: #141414;
     color: #fff;
     text-align: center;
 }
@@ -37,11 +37,10 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif;
 }
 
 .nav-links a:hover {
-    color: #e50914; /* 채도 낮은 빨간색 */
+    color: #e50914;
 }
 
 /* 메인 제목 */
@@ -60,19 +59,23 @@ main h1 {
 
 /* 요금제 박스 */
 .plan {
-    background-color: #1c1c1c; /* 어두운 회색 */
+    background-color: #1c1c1c;
     border: 1px solid #333;
     border-radius: 8px;
     padding: 20px;
     width: 300px;
-    text-align: left;
+    min-height: 280px; /* 동일한 높이 설정 */
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: space-between; /* 상하 균등 분배 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
 .plan h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #e50914; /* 채도 낮은 빨간색 */
+    color: #e50914;
 }
 
 .plan .price {
@@ -83,6 +86,7 @@ main h1 {
 .plan ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* 간격 문제 제거 */
 }
 
 .plan ul li {
@@ -106,41 +110,9 @@ main h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     text-transform: uppercase;
+    align-self: center; /* 버튼 중앙 정렬 */
 }
 
 .btn:hover {
-    background-color: #b00710; /* 더 어두운 빨간색 */
-}
-
-/* 숨김 요소 */
-.hidden {
-    display: none;
-}
-
-/* 은행 정보 */
-#bank-details {
-    margin-top: 30px;
-}
-
-/* 메시지 스타일 */
-#message {
-    margin-top: 15px;
-    font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif;
-}
-
-/* 푸터 스타일 */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-    padding: 10px;
-}
-
-.footer-text {
-    font-size: 0.8rem; /* 크기 작게 */
-    color: #aaa;
-    margin: 0;
-    text-align: center;
+    background-color: #b00710;
 }
