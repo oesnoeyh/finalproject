@@ -37,7 +37,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
+    font-family: 'Pretendard', Arial, sans-serif;
 }
 
 .nav-links a:hover {
@@ -48,7 +48,6 @@ body {
 main h1 {
     margin: 20px 0;
     font-size: 2rem;
-    font-weight: 700; /* Bold */
 }
 
 /* 요금제 컨테이너 */
@@ -98,15 +97,15 @@ main h1 {
     margin-top: 15px;
     padding: 10px 15px;
     font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
-    font-weight: 600; /* Pretendard Semi-Bold */
+    font-family: 'Pretendard', Arial, sans-serif;
+    font-weight: 600;
     color: #fff;
     background-color: #e50914;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-transform: uppercase; /* 대문자 설정 */
+    text-transform: uppercase;
 }
 
 .btn:hover {
@@ -127,5 +126,21 @@ main h1 {
 #message {
     margin-top: 15px;
     font-size: 1rem;
-    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
+    font-family: 'Pretendard', Arial, sans-serif;
+}
+
+/* 푸터 스타일 */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+}
+
+.footer-text {
+    font-size: 0.8rem; /* 크기 작게 */
+    color: #aaa;
+    margin: 0;
+    text-align: center;
 }
