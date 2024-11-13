@@ -101,19 +101,22 @@ main h1 {
     margin-top: 15px;
     padding: 10px 15px;
     font-size: 1rem;
-    font-weight: 600;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 폰트 적용 */
+    font-weight: 600; /* Semi-Bold */
     color: #fff;
     background-color: #e50914;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    text-transform: uppercase;
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+    text-transform: uppercase; /* 대문자 */
 }
 
 .btn:hover {
-    background-color: #b00710;
+    background-color: #b00710; /* 버튼 호버 시 어두운 빨간색 */
+    transform: scale(1.05); /* 살짝 확대 */
 }
+
 
 /* 숨김 요소 */
 .hidden {
@@ -133,14 +136,16 @@ main h1 {
 
 /* 푸터 스타일 */
 footer {
-    position: relative;
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #000;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
 }
 
 .footer-text {
     font-size: 0.8rem;
     color: #aaa;
+    margin: 0;
 }
