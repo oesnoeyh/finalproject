@@ -1,9 +1,14 @@
+// 페이지 로드 시 계좌번호 섹션 숨기기
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('bank-details').classList.add('hidden');
+});
+
 // 계좌번호 섹션 표시 함수
 function showBankInfo(planType) {
     const bankDetails = document.getElementById('bank-details');
     const messageElement = document.getElementById('message');
 
-    // 계좌번호 표시
+    // 계좌번호 섹션 표시
     bankDetails.classList.remove('hidden');
 
     // 기존 메시지 초기화
