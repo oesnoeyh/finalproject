@@ -3,7 +3,7 @@
 
 /* 기본 스타일 */
 body {
-    font-family: 'Pretendard', Arial, sans-serif;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 우선 적용 */
     margin: 0;
     padding: 0;
     background-color: #141414; /* 넷플릭스 스타일 검정 */
@@ -37,6 +37,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
 }
 
 .nav-links a:hover {
@@ -47,6 +48,7 @@ body {
 main h1 {
     margin: 20px 0;
     font-size: 2rem;
+    font-weight: 700; /* Bold */
 }
 
 /* 요금제 컨테이너 */
@@ -96,12 +98,15 @@ main h1 {
     margin-top: 15px;
     padding: 10px 15px;
     font-size: 1rem;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
+    font-weight: 600; /* Pretendard Semi-Bold */
     color: #fff;
     background-color: #e50914;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-transform: uppercase; /* 대문자 설정 */
 }
 
 .btn:hover {
@@ -122,4 +127,5 @@ main h1 {
 #message {
     margin-top: 15px;
     font-size: 1rem;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 적용 */
 }
