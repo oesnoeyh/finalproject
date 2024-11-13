@@ -1,94 +1,126 @@
-/* 전체 스타일 */
+/* Pretendard 서체 설정 (CDN) */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 기본 스타일 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pretendard', Arial, sans-serif; /* Pretendard 우선 적용 */
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
     text-align: center;
+    background-color: #f0f2f5; /* 배경 회색 */
+    color: #333;
 }
 
 /* 네비게이션 바 */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
     background-color: #222;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: left;
 }
 
-.logo {
+.navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
+/* 메인 제목 */
+main h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 700; /* Bold */
+}
+
+/* 요금제 컨테이너 */
+.pricing-container {
     display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 0;
+    padding: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+/* 요금제 박스 */
+.plan {
+    background-color: #f7f9fc; /* 밝은 회색 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #ff4c4c;
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #e4e8ef; /* hover 시 약간 더 어두운 회색 */
 }
 
-/* 히어로 섹션 */
-.hero-section {
-    padding: 100px 20px;
-}
-
-.hero-section h1 {
-    font-size: 2.5rem;
+.plan h2 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    font-weight: 700; /* Bold */
 }
 
-.hero-section p {
+.plan .price {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-weight: 400; /* Regular */
+    color: #007bff;
+}
+
+.plan .description {
+    font-size: 0.9rem;
+    font-weight: 400; /* Regular */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.plan ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
 }
 
 /* 버튼 스타일 */
-.red-btn {
-    padding: 10px 20px;
+.btn {
+    display: block;
+    padding: 10px 15px;
     font-size: 1rem;
     color: #fff;
-    background-color: #ff4c4c;
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     transition: background-color 0.3s ease;
-    margin: 10px 5px;
 }
 
-.red-btn:hover {
-    background-color: #cc0000;
+.btn:hover {
+    background-color: #0056b3;
 }
 
-/* 숨김 요소 */
-.hidden {
-    display: none;
+/* 하이라이트된 플랜 */
+.plan.highlight {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* 메시지 스타일 */
-#message {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #ff4c4c;
-}
-
-/* 푸터 스타일 */
+/* 푸터 */
 footer {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
     background-color: #222;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
